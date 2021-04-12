@@ -1,20 +1,11 @@
-FROM node:carbon
+FROM tomcat:8.0
 
+LABEL maintainer=”jeetbisht”
 
-# Create app directory
-WORKDIR /usr/src/app
+ADD C:\Users\Jbisht\Downloads\sample.war /usr/local/tomcat/webapps/
 
-# Install app dependencies
-# A wildcard is used to ensure both package.json AND package-lock.json are copied
-# where available (npm@5+)
-COPY package*.json ./
-
-RUN npm install
-# If you are building your code for production
-# RUN npm install --only=production
-
-# Bundle app source
-COPY . .
+ADD C:\Users\Jbisht\Desktop\kubernetees\dockerfiles\ode.war /usr/local/tomcat/webapps/
 
 EXPOSE 8080
-CMD [ "npm", "start" ]
+
+CMD [“catalina.sh”, “run”]
