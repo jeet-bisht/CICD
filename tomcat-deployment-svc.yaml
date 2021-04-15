@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: tomcat
-        image: jeetbisht91/mytomcat:latest
+        image: jeetbisht91/tommy:latest
         ports:
         - containerPort: 8080
 ---
