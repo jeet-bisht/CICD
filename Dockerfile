@@ -7,6 +7,6 @@ EXPOSE 8080
 
 ADD student.war /usr/local/tomcat/webapps/
 
-COPY target/*.war /usr/local/tomcat/webapps/myweb.war
+COPY target/*.war /usr/local/tomcat/webapps/
 CMD ["/usr/local/tomcat/bin/catalina.sh", "run"]
 
