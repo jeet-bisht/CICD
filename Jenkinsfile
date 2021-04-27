@@ -1,3 +1,4 @@
+---
 node {
 
     checkout scm
@@ -10,5 +11,7 @@ node {
         customImage.push()
     }
 }
+
+
 
 
