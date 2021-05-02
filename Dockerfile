@@ -6,7 +6,7 @@ LABEL maintainer=”jeetbisht”
 EXPOSE 8080
 
 
-ADD target/gs-maven-0.1.0.war /usr/local/tomcat/webapps/
+ADD target/myweb.war /usr/local/tomcat/webapps/
 
 ADD student.war /usr/local/tomcat/webapps/
 
