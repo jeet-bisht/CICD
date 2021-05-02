@@ -12,7 +12,7 @@
 	
 	
 	<properties>
-		<docker.image.prefix>kammana</docker.image.prefix>
+		<docker.image.prefix>jeetbisht91</docker.image.prefix>
 	</properties>	
 	<dependencies>
 
